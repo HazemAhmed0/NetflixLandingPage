@@ -1,0 +1,213 @@
+$primary-color: #e50914;
+$dark-color: #141414;
+$mfont: "Arial", sans-serif;
+
+@mixin centerify {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $mfont;
+  -webkit-font-smoothing: antialiased;
+  background: black;
+  color: #999;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.headline {
+  width: 100%;
+  height: 93vh;
+  background-image: url(../res/bg2.webp);
+  background-size: cover;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px black, inset -120px -100px 250px black;
+    height: 93vh;
+  }
+}
+
+.headline-top {
+  z-index: 2;
+  position: relative;
+  height: 90px;
+  img {
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.headline-main {
+  z-index: 2;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  @include centerify;
+  margin-top: 15vh;
+  h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1.1;
+    margin: 0 0 2rem;
+  }
+  p {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 1.3;
+    margin: 0 0 2rem;
+  }
+}
+
+.button {
+  display: inline-block;
+  background: $primary-color;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  outline: none;
+  /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45); */
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.button-large {
+  display: inline-block;
+  background: $primary-color;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  outline: none;
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.tabs .container > {
+  div {
+    padding: 1.5rem 0;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
+}
+
+.tabs {
+  background: $dark-color;
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+  }
+}
+
+.tab-item img {
+  width: 5vw;
+  opacity: 0.7;
+}
+.tab-content {
+  padding: 3rem 0;
+  color: white;
+  background-color: black;
+}
+
+#tab-1-content .tab-1-content-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-mid {
+  display: inline-block;
+  background: $primary-color;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  text-transform: uppercase;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
