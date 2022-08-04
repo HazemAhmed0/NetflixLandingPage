@@ -175,12 +175,68 @@ img {
   background-color: black;
 }
 
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.active {
+  display: block !important;
+}
+
 #tab-1-content .tab-1-content-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   align-items: center;
   justify-content: center;
+}
+
+#tab-2-content .tab-2-content-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+#tab-2-content .tab-2-content-inner element {
+  padding: 2rem;
+}
+#tab-2-content .tab-2-content-inner p {
+  grid-column: 1/3;
+}
+
+#tab-3-content .tab-3-content-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+#tab-3-content .tab-3-content-inner table {
+  border-spacing: 0px;
+  width: 50vw;
+  height: 30vh;
+  text-align: left;
+  margin-top: 3rem;
+}
+#tab-3-content .tab-3-content-inner table td {
+  padding: 0.5rem;
+  text-align: center;
+}
+#tab-3-content .tab-3-content-inner table td:first-child {
+  text-align: left;
+}
+#tab-3-content .tab-3-content-inner table th {
+  text-align: center;
+  padding: 0.5rem;
+}
+#tab-3-content .tab-3-content-inner table tbody tr:nth-child(2n-1) {
+  background-color: #141414;
 }
 
 .button-mid {
@@ -201,4 +257,30 @@ img {
 .text-lg {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.element .subsection {
+  font-size: 1.5rem;
+}
+.element .desc {
+  font-size: 1rem;
+  color: #808080;
+}
+
+footer {
+  max-width: 80%;
+  margin: 1rem auto;
+  overflow: auto;
+  font-size: 0.8rem;
+  color: #808080;
+}
+footer a {
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
 }/*# sourceMappingURL=main.css.map */
