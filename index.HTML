@@ -8,7 +8,6 @@
     <title>Netflix Landing Page Clone</title>
 </head>
 <body>
-    <script src="./scripts/app.js"></script>
     <header class="headline">
         <div class="headline-top">
             <img src="./res/logo.png" alt="Netflix">
@@ -24,22 +23,22 @@
     </header>
     <section class="tabs">
         <div class="container">
-            <div id="tab-1" class="tab-item tab-active">
+            <div id="tab-1" class="tab-item tab-active" onclick="selectItem(this)">
                 <img src="./res/door.png" alt="Door">
                 <p class="hide-sm">Cancel anytime</p>
             </div>
-            <div id="tab-2" class="tab-item">
+            <div id="tab-2" class="tab-item" onclick="selectItem(this)">
                 <img src="./res/devices.png" alt="Devices">
                 <p class="hide-sm">Watch anywhere</p>
             </div>
-            <div id="tab-3" class="tab-item">
+            <div id="tab-3" class="tab-item" onclick="selectItem(this)">
                 <img src="./res/price.png" alt="Price">
                 <p class="hide-sm">Pick your price</p>
             </div>
         </div>
     </section>
 
-    <section class="tab-content">
+    <section class="tab-content" >
         <div class="container">
             <div id="tab-1-content" class="active tab-content-item">
                 <div class="tab-1-content-inner">
@@ -190,5 +189,6 @@
             </ul>
         </div>
     </footer>
+<script src="./scripts/app.js"></script>
 </body>
 </html>

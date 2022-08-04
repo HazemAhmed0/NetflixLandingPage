@@ -1,5 +1,6 @@
 $primary-color: #e50914;
 $dark-color: #141414;
+$gray: #808080;
 $mfont: "Arial", sans-serif;
 
 @mixin centerify {
@@ -239,7 +240,7 @@ img {
     }
     tbody {
       tr:nth-child(2n-1) {
-        background-color: #141414;
+        background-color: $dark-color;
       }
     }
   }
@@ -271,7 +272,7 @@ img {
   }
   .desc {
     font-size: 1rem;
-    color: #808080;
+    color: $gray;
   }
 }
 
@@ -280,10 +281,10 @@ footer {
   margin: 1rem auto;
   overflow: auto;
   font-size: 0.8rem;
-  color: #808080;
+  color: $gray;
   a {
     font-size: 0.8rem;
-    color: #808080;
+    color: $gray;
   }
 }
 
