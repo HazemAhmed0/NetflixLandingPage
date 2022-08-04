@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Netflix Landing Page Clone</title>
+  </head>
+  <body>
+    <header class="headline">
+      <div class="headline-top">
+        <img src="./res/logo.png" alt="Netflix" />
+        <a href="#" class="button">Log In</a>
+      </div>
+      <div class="headline-main">
+        <h1>See What's Next</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <a href="#" class="button-large"> Watch Free for 30 Days > </a>
+      </div>
+    </header>
+    <section class="tabs">
+      <div class="container">
+        <div id="tab-1" class="tab-item tab-active" onclick="selectItem(this)">
+          <img src="./res/door.png" alt="Door" />
+          <p class="hide-sm">Cancel anytime</p>
+        </div>
+        <div id="tab-2" class="tab-item" onclick="selectItem(this)">
+          <img src="./res/devices.png" alt="Devices" />
+          <p class="hide-sm">Watch anywhere</p>
+        </div>
+        <div id="tab-3" class="tab-item" onclick="selectItem(this)">
+          <img src="./res/price.png" alt="Price" />
+          <p class="hide-sm">Pick your price</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content">
+      <div class="container">
+        <div id="tab-1-content" class="active tab-content-item">
+          <div class="tab-1-content-inner">
+            <div>
+              <p class="text-lg">
+                If you decide Netflix isnt for you - no problem. No commitment.
+                Cancel online anytime.
+              </p>
+              <a href="#" class="button-mid">Watch Free For 30 Days</a>
+            </div>
+            <img src="./res/cancel.png" alt="Cancel" />
+          </div>
+        </div>
+        <div id="tab-2-content" class="tab-content-item">
+          <div class="tab-2-content-inner">
+            <p class="text-lg">
+              Watch TV shows and movies anytime, anywhere - personalized for
+              you.
+            </p>
+            <a href="#" class="button-mid">Watch Free For 30 Days</a>
+            <div class="element">
+              <img src="./res/tab-content-2-1.png" alt="TV" />
+              <p class="subsection">Watch on your TV</p>
+              <p class="desc">
+                Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+                players and more.
+              </p>
+            </div>
+            <div class="element">
+              <img src="./res/tab-content-2-2.png" alt="Mobile" />
+              <p class="subsection">Watch instantly or download for later</p>
+              <p class="desc">
+                Available on phone and tablet, wherever you go.
+              </p>
+            </div>
+            <div class="element">
+              <img src="./res/tab-content-2-3.png" alt="Laptop" />
+              <p class="subsection">Use any computer</p>
+              <p class="desc">Watch right on Netflix.com.</p>
+            </div>
+          </div>
+        </div>
+        <div id="tab-3-content" class="tab-content-item">
+          <div class="tab-3-content-inner">
+            <p class="text-lg">
+              Choose one plan and watch everything on Netflix.
+            </p>
+            <a href="#" class="button-mid">Watch Free For 30 Days</a>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>BASIC</th>
+                  <th>STANDARD</th>
+                  <th>PREMIUM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monthly price after free month ends on 6/19/19</td>
+                  <td>$8.99</td>
+                  <td>$12.99</td>
+                  <td>$15.99</td>
+                </tr>
+                <tr>
+                  <td>HD Available</td>
+                  <td>✖</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Ultra HD Available</td>
+                  <td>✖</td>
+                  <td>✖</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Screens you can watch on at the same time</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Watch on your laptop, TV, phone and tablet</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Unlimited movies and TV shows</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>Cancel anytime</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+                <tr>
+                  <td>First month free</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                  <td>✔</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Questions? Call 1-866-579-7172</p>
+      <br />
+      <div class="footer">
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Ways To Watch</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Netflix Originals</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Redeem Gift Cards</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Speed Test</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Buy Gift Cards</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+          <li><a href="#">Legal Notices</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
